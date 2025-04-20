@@ -4,16 +4,19 @@
 
 
 body {
-    font-family: "HelveticaNeue", sans-serif;
+    font-family: "HelveticaNeue", sans-serif !important;
     margin: 0;
     padding: 0;
 }
-.navbar-custom {
+.main-gradient {
     border-radius: 20px;
     background: radial-gradient(107.95% 98.56% at 26.98% 87.32%, #bcbcbc 0%, #575f6d 100%);
-    padding: 20px 0;
     margin: 10px;
-    height: 1155px;
+
+
+}
+.navbar-custom {
+
 
 }
 .navbar-custom .container-fluid {
@@ -69,4 +72,209 @@ body {
     cursor: pointer;
 }
 
+/*hero*/
+
+
+.  .hero-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 60px 30px;
+}
+
+.headline {
+    position: relative;
+    z-index: 2;
+    padding-top: 75px;
+    font-weight: 300;
+    font-size: 160px;
+    line-height: 84%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.subheadline {
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+    font-size: 160px;
+    line-height: 94%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.description {
+    padding-left: 10px;
+    padding-bottom: 64px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    padding-top: 17px;
+    margin: 0px;
+}
+
+.btn-outline-light {
+    border-color: #ffffff80;
+    color: white;
+}
+.rounded-pill {
+    margin-right: 7px;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+.building-img {
+    max-width: 908px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-right {
+    position: relative;
+}
+
+.gallery-thumb {
+    z-index: 3;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1000px;
+    position: absolute;
+    right: 20px;
+    top: 267px;
+    background: transparent;
+    padding: 38px 54px 46px 54px;
+    text-align: center;
+    width: auto;
+    transition: transform 0.2s ease-in-out;
+}
+.gallery-thumb:hover {
+    transform: scale(1.01);
+}
+
+
+.gallery-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-stack img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+    margin-top: -30px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+.gallery-stack img:hover {
+    transform: scale(1.01);
+}
+
+.gallery-stack img:first-child {
+    margin-top: 0;
+}
+.gallery-thumb p strong {
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #fff;
+}
+.gallery-thumb p {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 136%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.decor-text {
+    font-family: 'HerrVonMuellerhoff';
+    font-weight: 400;
+    font-size: clamp(48px, 15.625vw, 297px);
+    line-height: 7%;
+    color: #fff;
+    position: absolute;
+    bottom: clamp(80px, 21.29vw, 313px);
+    left: 32%;
+    pointer-events: none;
+    transform: rotate(356deg);
+    z-index: 2;
+}
+
+
+.video-preview {
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.play-circle {
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+    width: 251px;
+    height: 251px;
+    border: 1px solid #fff4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-circle:hover {
+    transform: scale(1.1);
+}
+
+.inner-circle {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 170px;
+    height: 170px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.video-box {
+    margin-top: 28px;
+    margin-left: -65px; /* наезд на кружок */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.video-box img {
+    width: 240px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.video-caption {
+    margin-left: 38px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 165%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
 

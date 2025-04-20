@@ -40,5 +40,14 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'HerrVonMuellerhoff';
+    src: local('HerrVonMuellerhoff-Regular'),
+    url('HerrVonMuellerhoff-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 
 
