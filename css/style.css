@@ -9,8 +9,12 @@ body {
     padding: 0;
 }
 .main-gradient {
+    background:
+            url("/img/building.png") no-repeat right 55px bottom,
+            radial-gradient(107.95% 98.56% at 26.98% 87.32%, #bcbcbc 0%, #575f6d 100%);
+    background-size: auto, cover; /* первое — картинка, второе — градиент */
     border-radius: 20px;
-    background: radial-gradient(107.95% 98.56% at 26.98% 87.32%, #bcbcbc 0%, #575f6d 100%);
+
     margin: 10px;
 
 
@@ -85,7 +89,7 @@ body {
 .headline {
     position: relative;
     z-index: 2;
-    padding-top: 75px;
+    padding-top: 100px;
     font-weight: 300;
     font-size: 160px;
     line-height: 84%;
@@ -215,6 +219,7 @@ body {
 
 
 .video-preview {
+    margin-bottom: 51px;
     margin-left: 15px;
     position: relative;
     display: flex;
