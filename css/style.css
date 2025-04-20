@@ -10,7 +10,7 @@ body {
 }
 .main-gradient {
     background:
-            url("/img/building.png") no-repeat right 55px bottom,
+            url("../img/building.png") no-repeat right 55px bottom,
             radial-gradient(107.95% 98.56% at 26.98% 87.32%, #bcbcbc 0%, #575f6d 100%);
     background-size: auto, cover; /* первое — картинка, второе — градиент */
     border-radius: 20px;
