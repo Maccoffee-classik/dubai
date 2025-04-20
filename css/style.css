@@ -10,7 +10,7 @@ body {
 }
 .main-gradient {
     background:
-            url("../img/building.png") no-repeat right 55px bottom,
+           /* url("../img/building.png") no-repeat right 55px bottom,*/
             radial-gradient(107.95% 98.56% at 26.98% 87.32%, #bcbcbc 0%, #575f6d 100%);
     background-size: auto, cover; /* первое — картинка, второе — градиент */
     border-radius: 20px;
@@ -89,7 +89,7 @@ body {
 .headline {
     position: relative;
     z-index: 2;
-    padding-top: 100px;
+    padding-top: 50px;
     font-weight: 300;
     font-size: 160px;
     line-height: 84%;
@@ -133,7 +133,7 @@ body {
 }
 
 .building-img {
-    max-width: 908px;
+    /*max-width: 908px;*/
     width: 100%;
     height: auto;
     position: relative;
@@ -145,15 +145,16 @@ body {
 }
 
 .gallery-thumb {
+    width: auto!important;
     backdrop-filter: blur(20px);
     z-index: 3;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 1000px;
     position: absolute;
     right: 20px;
-    top: 267px;
+    top: 20%;
     background: transparent;
-    padding: 38px 54px 46px 54px;
+    padding: 38px 54px 46px 54px!important;
     text-align: center;
     width: auto;
     transition: transform 0.2s ease-in-out;
@@ -282,5 +283,18 @@ body {
     line-height: 165%;
     letter-spacing: -0.03em;
     color: #fff;
+}
+
+@media (max-width: 1440px) {
+    .headline {
+        padding-top:12px;
+
+        font-size: 110px;
+
+    }
+    .video-preview {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 }
 
