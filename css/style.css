@@ -7,8 +7,10 @@ body {
     font-family: "HelveticaNeue", sans-serif !important;
     margin: 0;
     padding: 0;
+    background-color: #eeeeee !important;
 }
 .main-gradient {
+
     background:
            /* url("../img/building.png") no-repeat right 55px bottom,*/
             radial-gradient(107.95% 98.56% at 26.98% 87.32%, #bcbcbc 0%, #575f6d 100%);
@@ -287,6 +289,78 @@ body {
     letter-spacing: -0.03em;
     color: #fff;
 }
+
+
+/*2й блок*/
+.why-dubai-section {
+    background-color: #eeeeee;
+}
+
+.icon-btn {
+    width: 82px;
+    height: 82px;
+    border: 1px solid #000;
+    border-radius: 63px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-dubai-section h2 {
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 130px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #000;
+}
+.why-dubai-section__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: -0.03em;
+    color: rgba(0, 0, 0, 0.4);
+}
+.why-dubai-section__left-block .why-dubai-section__arrow {
+    padding-top: 30px;
+    padding-right: 20px;
+
+}
+.why-dubai-section__right-block .why-dubai-section__arrow {
+    padding-top: 30px;
+    padding-right: 20px;
+
+}
+.why-dubai-section__subtitle-white {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.why-dubai-section h4 {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: #000;
+}
+.why-dubai-section__left-block {
+    padding: 33px;
+}
+.interior-img {
+    border-radius: 20px;
+}
+.w-80 {
+    width: 80%;
+}
+.why-dubai-section__right-block-text {
+    padding: 40px 0 40px 50px;
+}
+
+
+
 
 @media (max-width: 1440px) {
     .headline {
