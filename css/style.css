@@ -380,6 +380,7 @@ body {
     line-height: 87%;
     letter-spacing: -0.03em;
     color: #fff;
+    margin-bottom: 328px;
 }
 
 .about-ava-section p {
@@ -460,39 +461,180 @@ body {
     height: auto;
 }
 
+/*4й БЛОК*/
+.request-section {
+    background-color: #eeeeee;
+    color: #fff;
+    background-size: cover;
+    padding: 60px 0;
+    color: #fff;
+
+
+}
+.request-section_wrapper {
+    background: url("../img/anna-bg.jpg") center right no-repeat;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 51px;
+    background-size: cover;
+}
+
+.request-section h2 {
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 102%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    margin-top: 156px;
+    margin-bottom: 40px;
+}
+
+.request-section h2 strong {
+    font-weight: 400;
+}
+
+.info-box {
+    min-width: 279px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 27px 33px 27px 20px;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.05);
+}
+.info-box strong{
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 0%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #fff;
+}
+.request-section form {
+    margin-bottom: 30%;
+}
+.phone-input .form-control {
+    border-radius: 1000px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding-left: 3rem;
+}
+
+.phone-input label {
+    padding-left: 3rem;
+    color: #ccc;
+}
+.btn-leave-request {
+    font-weight: 500;
+    font-size: 16px;
+
+    letter-spacing: -0.03em;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+    padding: 18px 20px 18px 40px;
+    border: none;
+    border-radius: 1000px;
+    gap: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-leave-request .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-leave-request:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.request-section_name {
+    bottom: 200px;
+    right: 50%;
+}
+
+.request-section .request-section_name div.fw-semibold{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 0%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    padding: 33px 57px;
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
+    background: rgba(255, 255, 255, 0.15);
+}
+.request-section .request-section_name div.small{
+    margin: -14px auto 0;
+    width: 60%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    padding: 19px 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
+    background: rgba(255, 255, 255, 0.15);
+    text-align: center;
+
+}
+/*7й блок*/
+.request-section2_wrapper {
+    background: url("../img/building-bg.jpg") center right no-repeat;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 51px;
+    background-size: cover;
+}
+.request-section2_wrapper .gallery-thumb {
+    top: calc(50% - 289px);
+}
+
+
 @media (max-width: 1440px) {
-    .headline {
-        padding-top: 70px;
+.headline {
+    padding-top: 70px;
 
-        font-size: 100px;
+    font-size: 100px;
 
-    }
+}
 
-    .video-preview {
-        position: absolute;
+.video-preview {
+    position: absolute;
 
-        margin-top: 0;
-        margin-bottom: 0px;
-        right: 29px;
-        bottom: 40px;
-    }
+    margin-top: 0;
+    margin-bottom: 0px;
+    right: 29px;
+    bottom: 40px;
+}
 
-    .inner-circle {
-        border: none;
-    }
+.inner-circle {
+    border: none;
+}
 
-    .play-circle {
-        width: 120px;
-        height: 120px;
-        backdrop-filter: blur(20px);
-        z-index: 3;
+.play-circle {
+    width: 120px;
+    height: 120px;
+    backdrop-filter: blur(20px);
+    z-index: 3;
 
-    }
+}
 
-    .video-box {
-        margin-top: 0;
+.video-box {
+    margin-top: 0;
 
-        margin-left: 10px; /* наезд на кружок */
+    margin-left: 10px; /* наезд на кружок */
     }
     .video-box img {
 
