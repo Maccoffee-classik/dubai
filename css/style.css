@@ -359,8 +359,106 @@ body {
     padding: 40px 0 40px 50px;
 }
 
+/*3й БЛОК*/
+.about-ava-section {
+    background-color: #eeeeee;
+    color: #fff;
 
 
+}
+.about-ava-section_wrapper {
+    border-radius: 20px;
+    background: #000;
+    padding: 35px;
+
+}
+
+.about-ava-section h2 {
+    font-family: "HelveticaNeue", sans-serif;
+    font-weight: 300;
+    font-size: 150px;
+    line-height: 87%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.about-ava-section p {
+    font-family: "HelveticaNeue", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-align: right;
+    color: #fff;
+}
+.custom-learn-btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 34px;
+    text-transform: uppercase;
+    background-color: #000;
+
+    padding: 9px 9px 9px 32px;
+
+    font-family: "HelveticaNeue", sans-serif;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.custom-learn-btn .circle {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-learn-btn svg {
+    width: 28px;
+    height: 28px;
+    stroke: #000;
+}
+
+.custom-learn-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.custom-learn-btn:hover .circle {
+    background-color: #000;
+}
+
+.custom-learn-btn:hover svg path{
+    stroke: #fff;
+}
+
+
+
+
+.about-ava-section .btn-dark {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: #000;
+}
+
+.about-ava-section img.rounded-4 {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.about-ava-section .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 
 @media (max-width: 1440px) {
     .headline {
