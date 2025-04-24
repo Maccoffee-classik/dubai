@@ -339,6 +339,85 @@
     </div>
 </section>
 
+
+<section class="section-faq">
+
+    <div class="container-fluid  ">
+        <div class=" row d-flex justify-content-between align-items-center ">
+
+            <div class="col-lg-6">
+                    <h4 class="section-faq__title text-center  text-lg-start ">FAQ</h4>
+
+            </div>
+            <div class="col-lg-6">
+
+                    <p class="section-faq__subtitle text-lg-end">EVERYTHING YOU NEED TO KNOW<br> ABOUT INVESTING IN DUBAI'S LUXURY<br> REAL ESTATE MARKET </p>
+            </div>
+        </div>
+
+
+        <div class="faq-content">
+            <ul class="faq-content-ul">
+                <li class="faq-content-li">
+                    <div class="faq-title">
+                        <p> WHAT TYPES OF LUXURY PROPERTIES DO YOU OFFER IN DUBAI?</p>
+                        <img src="img/arrow-faq.png" alt="">
+                    </div>
+                    <div class="faq-content-text">
+                        При разработке ценообразования мы опираемся на ваш запрос. В ходе брифинга мы уточняем ваши цели и предагаем наиболее экономичные и эффективные варианты, не продавая ненужные вам услуги.
+
+                    </div>
+                </li>
+                <li class="faq-content-li">
+                    <div class="faq-title">
+                        <p>CAN FOREIGNERS BUY PROPERTY IN DUBAI? </p>
+                        <img src="img/arrow-faq.png" alt="">
+                    </div>
+                    <div class="faq-content-text">
+                        Стадика работает с проектами любой сложности, поэтому мы готовы реализовать рекламную кампанию под любой бюджет и цель, даже если он кажется небольшим. Подготовим коммерческое предложение с доступными вариантами опционально под запрос и предложим только рабочий рекламный инструментарий.
+                    </div>
+                </li>
+                <li class="faq-content-li">
+                    <div class="faq-title">
+                        <p>WHAT IS THE PROCESS OF BUYING A PROPERTY IN DUBAI?</p>
+                        <img src="img/arrow-faq.png" alt="">
+                    </div>
+                    <div class="faq-content-text">
+                        За счет нашего более чем десятилетнего опыта в маркетинге для университетов и EdTech-проектов, мы используем только те инструменты, которые позволяют с наименьшими затратами привлекать лучших абитуриентов на ваши программы. Команда Стадики строит комплексные маркетинговые стратегии, использует все доступные каналы дистрибуции рекламных сообщений: от площадок Telegram до сложных кампаний в Яндекс Директ, готовит PR-стратегию и использует собственные каналы продвижения.
+                    </div>
+                </li>
+                <li class="faq-content-li">
+                    <div class="faq-title">
+                        <p>WHAT ARE THE BEST AREAS IN DUBAI FOR LUXURY REAL ESTATE?</p>
+                        <img src="img/arrow-faq.png" alt="">
+                    </div>
+                    <div class="faq-content-text">
+                        Мы реализовали более 100 рекламных кампаний для вузов и стипендиальных программ разной величины и с радостью ими поделимся! Оставляйте свой email здесь, чтобы получить свой кейс-бук.
+                    </div>
+                </li>
+                <li class="faq-content-li">
+                    <div class="faq-title">
+                        <p>DO YOU OFFER ASSISTANCE WITH LEGAL AND FINANCIAL MATTERS?</p>
+                        <img src="img/arrow-faq.png" alt="">
+                    </div>
+                    <div class="faq-content-text">
+                        Конечно! Наша команда проводит бесплатные консультации и бриф звонки, чтобы обсудить ваши цели и соотнести их с доступными инструментами. По результатам встречи присылаем коммерческое предложение или опции для работы, кастомизированные под ваш бюджет и задачи. Можно приходить самостоятельно, а можно звать команду и организовывать расширенную встречу.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
 <section class="request-section text-white py-5">
     <div class="container-fluid ">
         <div class="request-section2_wrapper ">
@@ -404,8 +483,28 @@
 
 
 
+<script src="owlcarousel/jquery-3.7.1.min.js"></script>
+<script>
+    function faqClickHandler(event) {
+        event.preventDefault();
+
+        const currentTitle = event.currentTarget;
+        const currentItem = currentTitle.closest('.faq-content-li');
+
+        currentItem.classList.toggle('active');
+    }
+
+    function initFaqTitle() {
+        document.querySelectorAll('.faq-title').forEach(title => {
+            title.removeEventListener('click', faqClickHandler);
+            title.addEventListener('click', faqClickHandler);
+        });
+    }
+
+    initFaqTitle();
 
 
+</script>
 
 </body>
 </html>
