@@ -76,6 +76,7 @@ body {
     margin-right: 39px;
 }
 .menu-icon {
+    display: none;
     font-size: 24px;
     cursor: pointer;
 }
@@ -875,7 +876,106 @@ body {
 
 
 
+/*галерея*/
+.bg-black {
+    background-color: #000 !important;
+    overflow: hidden;
+}
+.gallery h2 {
+    font-weight: 200;
+    font-size: 350px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+.gallery .lead {
+    text-transform: uppercase;
+    width: 50%;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
 
+    /* Кнопка Watch More: увеличенный размер иконок */
+.btn-slider {
+    border-color: #fff;
+    color: #fff;
+    font-weight: bold;
+    background: #fff;
+    padding: 11px 14px;
+    width: 100%;
+    display: inline-block;
+}
+.gallery-thumb.top-3 {
+    top: 27px!important;
+}
+
+
+.btn-slider  svg {
+    width: 28px;
+    height: 28px;
+    stroke: #000;
+}
+
+
+
+.btn-slider button:hover  {
+    background: #000;
+}
+
+.btn-slider .btn:hover svg path{
+    stroke:  #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.btn-slider button {
+
+    width: 50px; height: 50px;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    border: 1px solid #2b2b35;
+}
+.btn-slider a{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #000;
+}
+.btn-slider a:hover{
+    background: transparent!important;
+    color: #312C2C26 !important;
+}
+/* Owl Carousel: базовые стили */
+.carousel-three .item {
+    position: relative;
+    padding: 5px;
+}
+.carousel-three .item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Эффект увеличения при наведении */
+.carousel-three .item:hover img {
+    transform: scale(1.1);
+}
+
+/* Разрешаем выход изображения за границы при наведении */
+.carousel-three .owl-stage-outer {
+    overflow: visible;
+}
 
 
 @media (max-width: 1440px) {
