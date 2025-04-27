@@ -37,7 +37,16 @@ body {
     max-height: 94px;
 }
 .navbar-wrapper {
+    display: flex;
     gap: 48px;
+}
+.navbar-brand-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-button-group {
+    display: flex;
+    align-items: center;
 }
 .nav-link {
 
@@ -296,6 +305,9 @@ body {
 .why-dubai-section {
     background-color: #eeeeee;
 }
+.why-dubai-section-wrapper {
+    min-height: 100%; height: 100%;
+}
 
 .icon-btn {
     width: 82px;
@@ -384,7 +396,7 @@ body {
     margin-bottom: 328px;
 }
 
-.about-ava-section p {
+.about-ava-section p.text-uppercase {
     font-family: "HelveticaNeue", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -462,7 +474,7 @@ body {
     height: auto;
 }
 
-/*4й БЛОК*/
+/*5й БЛОК*/
 .request-section {
     background-color: #eeeeee;
     color: #fff;
@@ -500,7 +512,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     padding: 27px 33px 27px 20px;
-    font-size: 0.875rem;
+    font-size: 14px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -560,11 +572,11 @@ body {
 }
 .request-section_name {
     bottom: 200px;
-    right: 50%;
+    left: 0;
 }
 
 .request-section .request-section_name div.fw-semibold{
-    font-weight: 400;
+    font-weight: 400!important;
     font-size: 22px;
     line-height: 0%;
     letter-spacing: -0.03em;
@@ -589,21 +601,8 @@ body {
     text-align: center;
 
 }
-/*7й блок*/
-.request-section2_wrapper {
-    background: url("../img/building-bg.jpg") center right no-repeat;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    padding: 51px;
-    background-size: cover;
-}
-.request-section2_wrapper .gallery-thumb {
-    top: calc(50% - 289px);
-}
 
-
-/*FAQ*/
+/*6й блок FAQ*/
 .section-faq {
     padding-top: 100px;
 }
@@ -668,7 +667,7 @@ body {
 
 
 
-/* СЕКЦИЯ FAQ */
+/*  СЕКЦИЯ FAQ */
 
 
 
@@ -802,6 +801,24 @@ body {
 
 
 
+/*7й блок*/
+.request-section2_wrapper {
+    background: url("../img/building-bg.jpg") center right no-repeat;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 51px;
+    background-size: cover;
+}
+.request-section2_wrapper .gallery-thumb {
+    top: calc(50% - 289px);
+    bottom: auto;
+}
+
+
+
+
+
 /*owl carusel*/
 
 .owl-carousel .item {
@@ -888,11 +905,13 @@ body {
     letter-spacing: -0.03em;
     color: #fff;
 }
-.gallery .lead {
+.gallery p.lead {
     text-transform: uppercase;
     width: 50%;
-    margin-top: 140px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    font-size: 20px;
+    line-height: 150%;
 }
 
     /* Кнопка Watch More: увеличенный размер иконок */
@@ -907,6 +926,7 @@ body {
 }
 .gallery-thumb.top-3 {
     top: 27px!important;
+    bottom: auto;
 }
 
 
@@ -978,7 +998,236 @@ body {
 }
 
 
+/*footer*/
+.footer-link  {
+    margin-left: auto;
+    margin-right: 20px;
+}
+.footer__social-icon {
+    width: 24px;
+    filter: invert(1);
+}
+.footer-section {
+    /* Светло-серый фон как на изображении */
+    background-color: #eeeeee;
+    font-family: sans-serif; /* Выберите подходящий шрифт */
+    font-size: 0.9rem; /* Немного уменьшенный размер шрифта */
+}
+
+.footer-logo {
+    max-height: 40px; /* Ограничьте высоту логотипа */
+    /* Дополнительные стили для логотипа при необходимости */
+}
+
+.footer-nav .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #000;
+}
+
+.footer-nav .nav-link:hover {
+    color: #000; /* Цвет при наведении */
+}
+
+.footer-btn__dark {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    background-color: #000;
+
+    padding: 14px 33px !important;
+    border: 1px solid #000;
+
+}
+
+.footer-btn__light {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #000;
+    background: transparent;
+    padding: 14px 33px!important;
+    border: 1px solid #000;
+
+
+}
+
+.footer-btn__light:hover {
+    background-color: #e9ecef; /* Легкий фон при наведении */
+    border-color: #adb5bd;
+    color: #000;
+}
+
+
+.footer-hr {
+    border-top: 1px solid #dee2e6; /* Цвет линии */
+}
+
+.footer-fernandes-logo {
+    height: 25px; /* Размер логотипа Fernandes Media */
+    vertical-align: middle; /* Выравнивание по вертикали */
+}
+
+.footer-bottom-text {
+    color: #6c757d; /* Серый цвет текста */
+}
+
+.footer-privacy {
+    font-weight: 500; /* Средняя жирность */
+    color: #333; /* Темно-серый цвет текста */
+    text-transform: uppercase; /* Заглавные буквы */
+}
+.footer-privacy:hover {
+    color: #000; /* Цвет при наведении */
+}
+
+/* Стили для иконок соцсетей */
+.footer-section .bi {
+    font-size: 1.2rem; /* Размер иконок */
+    color: #333; /* Цвет иконок */
+}
+
+.footer-section a:hover .bi {
+    color: #000; /* Цвет иконок при наведении */
+}
+
+
+@media (max-width: 1920px) {
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .headline {
+        font-weight: 200;
+        font-size: 100px;
+        min-width: 824px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    /*
+        .container {
+            max-width: 1440px;
+        }*/
+    /*2й блок */
+    .why-dubai-section h2 {
+        font-weight: 200;
+        font-size: 80px;
+    }
+
+    .why-dubai-section__subtitle {
+        font-size: 14px;
+    }
+
+    .why-dubai-section h4 {
+        font-weight: 200;
+        font-size: 37px;
+
+    }
+
+    .why-dubai-section__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .why-dubai-section__subtitle-white {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .w-xxl-50 {
+        width: 50%;
+    }
+
+
+    /*3й блок*/
+    .about-ava-section h2 {
+        font-weight: 200;
+        font-size: 130px;
+    }
+
+    .about-ava-section p.text-uppercase {
+
+        font-size: 14px;
+        line-height: 214%;
+    }
+    .custom-learn-btn {
+        font-size: 14px;
+    }
+
+    /*5й блок*/
+    .request-section h2 {
+        font-weight: 300;
+        font-size: 50px;
+    }
+    .request-section .request-section_name div.fw-semibold{
+        font-weight: 400!important;
+        font-size: 16px;
+
+    }
+    .info-box {
+
+        font-size: 11px;
+
+    }
+    .info-box strong{
+
+        font-size: 30px;
+
+    }
+    /*6й блок FAQ*/
+
+    .section-faq__title {
+        font-weight: 200;
+        font-size: 200px;
+        line-height: 65%;
+
+    }
+    .section-faq__subtitle {
+        font-size: 14px;
+    }
+    .faq-title p {
+        font-size: 20px;
+    }
+
+    /*7й блок ГАЛЕРЕЯ*/
+    .gallery h2 {
+
+        font-size: 250px;
+
+
+    }
+    .gallery p.lead {
+        font-size: 14px;
+        line-height: 214%;
+    }
+    .btn-slider a {
+        font-size: 14px;
+    }
+
+}
 @media (max-width: 1440px) {
+    .why-dubai-section__right-block-text {
+        padding: 40px 0 10px 30px;
+    }
+    .why-dubai-section__right-block-text .w-80 {
+        width: 100%;
+    }
+
+    .w-xxl-50 {
+        width: 80%;
+    }
+
+
 .headline {
     padding-top: 70px;
 
@@ -1081,3 +1330,199 @@ body {
 
 }
 
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 992px) {
+    .why-dubai-section-wrapper {
+        min-height: auto;
+        height: auto;
+    }
+    .owl-carousel.carousel-two .item {
+        height: 140px;
+
+    }
+    .owl-carousel.carousel-one .item {
+        height: 140px;
+
+    }
+    .owl-carousel.carousel-three .item {
+        height: 240px;
+
+    }
+    .owl-carousel .badge-icon  {
+        display: none!important;
+    }
+    .owl-carousel .badge-location {
+        display: none!important;
+    }
+
+    .menu-icon {
+        display: block;
+
+    }
+    .navbar-wrapper {
+        display: none;
+    }
+    .header-button-group .btn {
+        display: none;
+    }
+    .navbar-brand-wrapper {
+        margin-left: 0;
+    }
+    .hero-right img {
+        margin-top: 0;
+    }
+    .headline {
+        min-width: auto;
+        font-size: 57px;
+        padding-top: 35px;
+    }
+    .description {
+        padding-bottom: 35px;
+    }
+    .hero-section-button-group {
+        flex-direction: column;
+    }
+    .hero-section-button-group .btn {
+        margin-bottom: 10px;
+
+    }
+    .gallery h2 {
+        font-size: 98px;
+    }
+
+
+
+
+
+    /*
+        .container {
+            max-width: 1440px;
+        }*/
+    /*2й блок */
+    .why-dubai-section h2 {
+        font-weight: 200;
+        font-size: 40px;
+    }
+
+    .why-dubai-section__subtitle {
+        font-size: 14px;
+    }
+
+    .why-dubai-section h4 {
+        font-weight: 200;
+        font-size: 28px;
+
+    }
+
+    .why-dubai-section__subtitle {
+
+    }
+
+    .why-dubai-section__subtitle-white {
+
+    }
+
+    .w-xxl-50 {
+        width: 100%;
+    }
+
+
+    /*3й блок*/
+    .about-ava-section h2 {
+
+        font-size: 50px;
+    }
+
+    .about-ava-section p.text-uppercase {
+
+
+    }
+    .custom-learn-btn {
+
+    }
+
+    /*5й блок*/
+    .request-section h2 {
+
+        font-size: 35px;
+    }
+    .request-section h2 br{
+
+        display: none;
+    }
+    .request-section .request-section_name div.fw-semibold{
+        font-weight: 400!important;
+        font-size: 14px;
+
+    }
+    .request-section .request-section_name div.small {
+        font-size: 8px!important;
+    }
+    .info-box {
+
+        font-size: 11px;
+
+    }
+    .info-box strong{
+
+        font-size: 30px;
+
+    }
+    /*6й блок FAQ*/
+
+    .section-faq__title {
+
+        font-size: 170px;
+
+
+    }
+    .section-faq__subtitle {
+        font-size: 14px;
+    }
+    .faq-title p {
+        font-size: 14px;
+    }
+
+    /*7й блок ГАЛЕРЕЯ*/
+    .gallery h2 {
+
+        font-size: 90px;
+
+
+    }
+    .gallery p.lead {
+        width: 80%;
+        text-align: right;
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 214%;
+    }
+    .btn-slider a {
+        font-size: 14px;
+    }
+
+    .about-ava-section img {
+        height: 680px !important;
+    }
+    .about-ava-section-down {
+        left: 50%!important;
+        transform: translateX(-50%);
+    }
+
+
+
+
+
+
+
+}
+
+@media (max-width: 600px) {
+
+    .hero-right img {
+        width: 350px;
+    }
+}
