@@ -1648,7 +1648,7 @@ body {
     }
     .about-ava-section-down {
         left: 50%!important;
-        transform: translateX(-50%);
+        transform: translateX(-50%)!important;
     }
 
 
