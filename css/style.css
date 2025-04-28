@@ -89,8 +89,113 @@ body {
     font-size: 24px;
     cursor: pointer;
 }
+/*моб меню*/
+.navbar-collapse {
+    flex-grow: initial!important;
+}
+.header .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header .show .header__buttons {
+    margin: auto;
+    padding-top: 10px;
+}
+.header .show .navbar-nav {
+    margin: auto;
 
-/*hero*/
+}
+.header .show .header__button {
+    border: 1px solid #67B3A5;
+    color: #67B3A5;
+}
+.header .header__burger {
+    display: flex;
+    z-index: 2;
+}
+.header .header__burger-icon {
+
+    z-index: 2;
+    border: transparent;
+    background: #f7f8fa;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+.header path {
+    transition: transform 0.25s;
+}
+.header .active path:nth-of-type(1) {
+    transform: rotate(45deg);
+    transform-origin: -1px 3px;
+}
+.header .active path:nth-of-type(2) {
+    display: none;
+}
+.header .active path:nth-of-type(3) {
+    transform: rotate(-45deg);
+    transform-origin: 0px 13px;
+}
+.header.active .navbar-brand {
+    margin: 0 auto 0px;
+    padding-left: 50px !important;
+
+
+}
+.header.active .header__logo1-img {
+    display: none;
+}
+
+.header__logo1-img {
+    display: none;
+}
+
+.header__logo2-img {
+    display: block;
+
+    min-width: 190px;
+}
+.header.active .header__logo2-img {
+    display: block;
+    margin-top: 78px;
+    min-width: 190px;
+}
+
+
+.header.active .navbar {
+    background: #000;
+}
+
+
+.header__social-icon-wrapper {
+    display:none;
+}
+
+.btn-outline-light-mob {
+    display:none;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 245%;
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*hero*/
 
 
 .  .hero-section {
@@ -508,7 +613,7 @@ body {
 }
 
 .info-box {
-    min-width: 279px;
+   /* min-width: 279px;*/
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     padding: 27px 33px 27px 20px;
@@ -1003,6 +1108,9 @@ body {
     margin-left: auto;
     margin-right: 20px;
 }
+.header__social-icon {
+    width: 24px;
+}
 .footer__social-icon {
     width: 24px;
     filter: invert(1);
@@ -1079,6 +1187,7 @@ body {
 }
 
 .footer-privacy {
+    font-size: 16px;
     font-weight: 500; /* Средняя жирность */
     color: #333; /* Темно-серый цвет текста */
     text-transform: uppercase; /* Заглавные буквы */
@@ -1096,6 +1205,10 @@ body {
 .footer-section a:hover .bi {
     color: #000; /* Цвет иконок при наведении */
 }
+
+
+
+
 
 
 @media (max-width: 1920px) {
@@ -1215,7 +1328,7 @@ body {
     }
 
 }
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .why-dubai-section__right-block-text {
         padding: 40px 0 10px 30px;
     }
@@ -1339,18 +1452,7 @@ body {
         min-height: auto;
         height: auto;
     }
-    .owl-carousel.carousel-two .item {
-        height: 140px;
 
-    }
-    .owl-carousel.carousel-one .item {
-        height: 140px;
-
-    }
-    .owl-carousel.carousel-three .item {
-        height: 240px;
-
-    }
     .owl-carousel .badge-icon  {
         display: none!important;
     }
@@ -1358,16 +1460,9 @@ body {
         display: none!important;
     }
 
-    .menu-icon {
-        display: block;
 
-    }
-    .navbar-wrapper {
-        display: none;
-    }
-    .header-button-group .btn {
-        display: none;
-    }
+
+
     .navbar-brand-wrapper {
         margin-left: 0;
     }
@@ -1427,6 +1522,9 @@ body {
 
     .w-xxl-50 {
         width: 100%;
+    }
+    .about-ava-section_wrapper {
+        padding: 35px 15px 15px 15px;
     }
 
 
@@ -1499,6 +1597,8 @@ body {
         margin-left: auto;
         font-size: 14px;
         line-height: 214%;
+        margin-bottom: 60px;
+        margin-top: 100px;
     }
     .btn-slider a {
         font-size: 14px;
@@ -1513,11 +1613,147 @@ body {
     }
 
 
+    .inner-circle {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        width: 75px;
+        height: 75px;
+    }
+    .video-preview {
+        right: auto;
+        bottom: auto;
+        left: 0;
+    }
+    .why-dubai-section__left-block {
+        padding: 32px 12px 20px 12px;
+    }
+    .why-dubai-section__arrow {
+        display: none;
+    }
+    .why-dubai-section__right-block-text {
+        padding: 15px 0 10px 0;
+    }
+
+    /*3й блок*/
+    .about-ava-section h2 {
+        margin-bottom: 60px;}
+    .about-ava-section .custom-learn-btn{
+        margin-bottom: 170px;
+    }
+    /*5й блок*/
+
+     .request-section_wrapper h2 {
+
+        margin-top: 640px;}
+    .request-section_name {
+
+        bottom: 400px;
+        left: 40px;}
+
+
+    .request-section_wrapper  form {
+        margin-bottom: 0;
+    }
+    .request-section_wrapper {
+        padding: 40px 20px 20px 20px;
+    }
+    .request-section .form-floating {
+        width: 100%;
+    }
+    .request-section .btn-leave-request
+    {
+        width: 100%;
+    }
+
+    /*FAQ*/
+    .section-faq__title {
+        margin-bottom: 171px;}
+    .faq-title p {
+
+        line-height: 114%;
+
+        margin: 46px 0;
+    }
+    .request-section2_wrapper {
+        padding: 40px 20px 20px 20px;
+    }
+    .request-section2_wrapper h2 {
+        margin-top: 56px;
+        margin-bottom: 31px;
+    }
+    .w-220 {
+        width: 220px;
+    }
+
+    /*моб меню*/
+    .header .navbar-collapse {
+        display: flex   ;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .btn-outline-light {
+        display: none;
+    }
+    .header .btn-white
+    {
+        display: none;
+    }
+    .navbar-collapse.collapse.show {
+        order:3;
+    }
+
+    .navbar-wrapper {
+        gap: 40px;
+        margin: auto;
+        display: flex   ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
 
 
 
+   /*BURGER*/
+    .header .header__burger-icon {
+
+        z-index: 2;
+        border: transparent;
+        background: #f7f8fa;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+    }
+    .header path {
+        transition: transform 0.25s;
+    }
+    .header .active path:nth-of-type(1) {
+        transform: rotate(45deg);
+        transform-origin: -1px 3px;
+    }
+    .header .active path:nth-of-type(2) {
+        display: none;
+    }
+    .header .active path:nth-of-type(3) {
+        transform: rotate(-45deg);
+        transform-origin: 0px 13px;
+    }
+    .header.active .navbar-brand {
+        margin: 0 auto 0px;
+        padding-left: 50px !important;
 
 
+    }
+    .header.active .header__social-icon-wrapper {
+        display: flex;
+        margin: 90px auto 90px;
+
+    }
+    .header.active .btn-outline-light-mob {
+        display: block;
+        width: 100%;
+        margin-bottom: 200px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1525,4 +1761,65 @@ body {
     .hero-right img {
         width: 350px;
     }
+    /*5й блок*/
+    .request-section_wrapper {
+        background: url("../img/anna-bg2.jpg")   top right  no-repeat;
+        background-size: cover;}
+    .btn-slider {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .carousel-three .item {
+
+        padding: 0;
+    }
+    .request-section3_wrapper {
+        background: url("../img/building-bg2.jpg")   top right  no-repeat;
+        background-size: cover;}
+    .request-section2_wrapper form {
+        margin-bottom:462px;
+    }
+    .owl-carousel.carousel-two .item {
+        height: 140px;
+
+    }
+    .owl-carousel.carousel-one .item {
+        height: 140px;
+
+    }
+    .owl-carousel.carousel-three .item {
+        height: 240px;
+
+    }
+    .footer-privacy-wrapper {
+        margin-top: 36px!important;
+        margin-bottom: 76px!important;
+    }
+    .footer-nav .nav-link {
+        font-size: 12px;
+    }
 }
+
+.header.active .header__burger-icon path:nth-of-type(1) {
+    transform: rotate(45deg);
+    transform-origin: -1px 3px;
+}
+.header.active .header__burger-icon  path:nth-of-type(2) {
+    display: none;
+}
+.header.active .header__burger-icon path:nth-of-type(3) {
+    transform: rotate(-45deg);
+    transform-origin: 0px 13px;
+}
+
+.header .show .header__buttons {
+    margin: auto;
+}
+.navbar-toggler {
+    background: transparent!important;
+}
+.navbar-toggler:focus {
+    text-decoration: none!important;
+    box-shadow: none!important;}

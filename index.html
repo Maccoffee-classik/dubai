@@ -20,29 +20,42 @@
 <header class="header">
     <nav class="navbar p-0 navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <div class=" align-items-center navbar-wrapper">
-                <a class="nav-link" href="#">about us</a>
-                <a class="nav-link" href="#">team</a>
-                <a class="nav-link" href="#">portfolio</a>
-                <a class="nav-link" href="#">media</a>
-                <a class="nav-link" href="#">contacts</a>
+            <div class="collapse navbar-collapse  order-lg-1 order-3" id="navbarNav">
+                <div class=" align-items-center navbar-wrapper">
+                    <a class="nav-link" href="#">about us</a>
+                    <a class="nav-link" href="#">team</a>
+                    <a class="nav-link" href="#">portfolio</a>
+                    <a class="nav-link" href="#">media</a>
+                    <a class="nav-link" href="#">contacts</a>
+                </div>
             </div>
-
-            <div class="navbar-brand-wrapper  text-center">
+            <div class="header__social-icon-wrapper text-center order-lg-1 order-4">
+                <a href="#" class="text-dark me-2">
+                    <img class="header__social-icon" src="img/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="text-dark me-2"> <img class="header__social-icon" src="img/tiktok.svg" alt="tiktok"></a>
+                <a href="#" class="text-dark me-2"><img class="header__social-icon" src="img/facebook.svg" alt="facebook"></a>
+                <a href="#" class="text-dark"><img class="header__social-icon" src="img/youtube.svg" alt="youtube"></a>
+            </div>
+            <button class="btn-outline-light-mob order-lg-1 order-5">Contact us</button>
+            <div class="navbar-brand-wrapper  text-center order-lg-2">
                 <div class="navbar-brand">
                  <img class="logo-img" src="img/logo.svg" class="logo-img" alt="logo">
 
                 </div>
             </div>
 
-            <div class=" position-relative z-2 header-button-group">
+            <div class=" position-relative z-2 header-button-group order-lg-3">
                 <button class="btn btn-outline-light">Contact us</button>
                 <button class="btn btn-white">Leave a request</button>
-                <div class="  menu-icon">
-                    <span class="d-block bg-white" style="height:2px;width:24px;margin-bottom:4px;"></span>
-                    <span class="d-block bg-white" style="height:2px;width:24px;margin-bottom:4px;"></span>
-                    <span class="d-block bg-white" style="height:2px;width:24px;"></span>
-                </div>
+                <button class="navbar-toggler header__burger-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 17 16" >
+                        <path fill-rule="evenodd"  fill="#ffffff" d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z" />
+                        <path fill-rule="evenodd"  fill="#ffffff" d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z"/>
+                        <path fill-rule="evenodd"  fill="#ffffff" d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -76,6 +89,7 @@
             <!-- Right -->
             <div class="col-xxl-8 col-lg-7  p-0 hero-right position-relative align-self-end">
                 <picture>
+                    <source srcset="img/building3.png" media="(max-width: 992px)">
                     <source srcset="img/building2.png" media="(max-width: 1440px)">
                     <img src="img/building.png" alt="building" class="building-img">
                 </picture>
@@ -120,7 +134,10 @@
                     </div>
 
                     <div class="mt-4">
+                        <picture>
+                        <source srcset="img/interior2.jpg" media="(max-width: 992px)">
                         <img src="img/interior.jpg" class="interior-img img-fluid  w-100" alt="Interior">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -572,12 +589,12 @@
                         <span class="text"><strong>23</strong> </span>
                         <span class="text">years on the<br> market UAE</span>
                     </div>
-                    <div class="info-box">
+                    <div class="info-box d-none d-lg-flex">
                         <span class="icon"><img src="img/check_ico.png" alt="">️️</span>
                         <span class="text"><strong>370</strong></span>
                         <span class="text"> clients over the<br> years of work</span>
                     </div>
-                    <div class="info-box">
+                    <div class="info-box d-none d-lg-flex">
                         <span class="icon"><img src="img/check_ico.png" alt="">️</span>
                         <span class="text"><strong>99%</strong> </span>
                         <span class="text">of clients are<br> satisfied with our work</span>
@@ -621,7 +638,7 @@
         <div class=" row d-flex justify-content-between align-items-center ">
 
             <div class="col-lg-6">
-                    <h4 class="section-faq__title text-center  text-lg-start ">FAQ</h4>
+                    <h4 class="section-faq__title  text-start ">FAQ</h4>
 
             </div>
             <div class="col-lg-6">
@@ -689,17 +706,17 @@
 <section class="gallery py-5" style="background-color: #eeeeee;">
     <div class="container-fluid">
         <!-- Внутренний чёрный блок -->
-        <div class="p-4 text-white bg-black rounded-4 position-relative">
+        <div class="p-0 p-lg-4 text-white bg-black rounded-4 position-relative">
 
             <div class="row">
                 <!-- Заголовок и описание -->
                 <div class="col-lg-7">
-                    <h2 class="display-1">GALERY</h2>
-                    <p class="lead">
+                    <h2 class="p-3 display-1">GALERY</h2>
+                    <p class="p-3  lead">
                         Discover a curated selection of luxury properties in Dubai — handpicked to match the highest standards of elegance, comfort, and investment potential.
                     </p>
                     <!-- Кнопка Watch More с иконками -->
-                    <div class="d-inline-block w-auto align-items-center rounded-pill btn-slider gap-3">
+                    <div class="w-auto align-items-center rounded-pill btn-slider gap-3">
                         <button class="btn  " id="prevSlide">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22 14H10" stroke="#000" stroke-width="2" stroke-linecap="round"/>
@@ -762,12 +779,12 @@
                             <span class="text"><strong>23</strong> </span>
                             <span class="text">years on the<br> market UAE</span>
                         </div>
-                        <div class="info-box">
+                        <div class="info-box d-none d-lg-flex">
                             <span class="icon"><img src="img/check_ico.png" alt="">️️</span>
                             <span class="text"><strong>370</strong></span>
                             <span class="text"> clients over the<br> years of work</span>
                         </div>
-                        <div class="info-box">
+                        <div class="info-box d-none d-lg-flex">
                             <span class="icon"><img src="img/check_ico.png" alt="">️</span>
                             <span class="text"><strong>99%</strong> </span>
                             <span class="text">of clients are<br> satisfied with our work</span>
@@ -814,7 +831,7 @@
 <footer class="footer-section  text-dark pt-4">
     <div class="container-fluid">
         <div class="row align-items-center mb-3">
-            <div class="col-lg-2 col-md-3 mb-3 mb-md-0">
+            <div class="text-center text-lg-start col-lg-2 col-md-3 mb-3 mb-md-0">
                 <img class="logo-img" src="img/logo-black.svg"  alt="logo">
 
             </div>
@@ -848,11 +865,11 @@
         <hr class="footer-hr">
 
         <div class="row align-items-center py-3">
-            <div class="col-md-4 mb-2 mb-md-0 footer-bottom-text">
+            <div class="d-none d-lg-block text-center text-lg-start col-md-4 mb-2 mb-md-0 footer-bottom-text">
                 <img class="w-100" src="img/logo-black2.svg"  alt="logo">
             </div>
 
-            <div class="col-md-3 text-center mb-2 mb-md-0">
+            <div class="col-md-3 text-center  mb-md-0 footer-privacy-wrapper">
                 <a href="#" class="text-dark text-decoration-none footer-privacy">PRIVACY</a>
             </div>
 
@@ -865,6 +882,11 @@
                 <a href="#" class="text-dark"><img class="footer__social-icon" src="img/youtube.svg" alt="youtube"></a>
             </div>
         </div>
+        <div class="row align-items-center py-3">
+            <div class="text-center d-block d-lg-none col-md-4 mb-2 mb-md-0 footer-bottom-text">
+                <img class="w-220" src="img/logo-black2mob.svg"  alt="logo">
+            </div>
+        </div>
     </div>
 </footer>
 
@@ -872,8 +894,43 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        const navbarNav = document.getElementById("navbarNav");
+
+        navbarNav.addEventListener("show.bs.collapse", function () {
+            header.classList.add("active");
+        });
+
+        navbarNav.addEventListener("hide.bs.collapse", function () {
+            header.classList.remove("active");
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 992) { // для мобильных и планшетов
+                    const collapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    collapse.hide();
+                }
+            });
+        });
+    });
+
+
+
+
+
+
+
     function faqClickHandler(event) {
         event.preventDefault();
 
@@ -901,7 +958,7 @@
             margin: 20,
             stagePadding: 300, // ← добавляет отступы по бокам сцены (показывает часть соседнего слайда)
             autoplay: true,
-          autoplayTimeout: 5000,
+            autoplayTimeout: 5000,
             autoplayHoverPause: true,
             responsive: {
                 0: {
@@ -916,7 +973,7 @@
                 },
                 1200: {
                     items: 2,
-                    stagePadding: 300
+                    stagePadding: 100
                 }
             }
         });
@@ -936,7 +993,7 @@
         owl2.owlCarousel({
             items: 2,
             loop: true,
-            margin: 20,
+            margin: 10,
             stagePadding: 300, // ← добавляет отступы по бокам сцены (показывает часть соседнего слайда)
             autoplay: true,
             autoplayTimeout: 4000,
@@ -945,17 +1002,17 @@
             responsive: {
                 0: {
                     items: 2,
-                    stagePadding: 40,
+                    stagePadding: 20,
                     margin: 3
                 },
                 768: {
                     items: 2,
-                    stagePadding: 40,
+                    stagePadding: 20,
                     margin: 3
                 },
                 1200: {
                     items: 2,
-                    stagePadding: 300
+                    stagePadding: 20
                 }
             }
         });
@@ -977,13 +1034,14 @@
             margin: 10,
             autoplay: true,
             autoplayTimeout: 5000,
-            stagePadding: 300,
+            stagePadding: 50,
             nav: false,
             navText: ['&larr;','&rarr;'],
             responsive: {
                 0: {
                     items: 1,
-                    stagePadding: 0
+                    stagePadding: 10,
+                    margin: 3
                 },
                 576: {
                     items: 1,
@@ -1009,6 +1067,10 @@
             owl3.trigger('next.owl.carousel');
         });
     });
+
+
+
+
 
 
 
