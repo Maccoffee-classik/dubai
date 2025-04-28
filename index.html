@@ -12,11 +12,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </head>
 <body>
+
+
 <main class="main-gradient text-white">
 <header class="header">
     <nav class="navbar p-0 navbar-expand-lg navbar-custom">
@@ -48,7 +51,7 @@
 
             <div class=" position-relative z-2 header-button-group order-lg-3">
                 <button class="btn btn-outline-light">Contact us</button>
-                <button class="btn btn-white">Leave a request</button>
+                <button data-bs-toggle="modal" data-bs-target="#requestModal" class="btn btn-white">Leave a request</button>
                 <button class="navbar-toggler header__burger-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 16">
@@ -73,7 +76,7 @@
                 </p>
                 <div class="d-flex  mb-4 hero-section-button-group">
                     <button data-aos="fade-up" class="btn btn-outline-light rounded-pill px-4">Contact us</button>
-                    <button data-aos="fade-up" class="btn btn-white rounded-pill px-4">Leave a request</button>
+                    <button data-bs-toggle="modal" data-bs-target="#requestModal" data-aos="fade-up" class="btn btn-white rounded-pill px-4">Leave a request</button>
                 </div>
                 <div class="video-preview">
                     <div class="play-circle">
@@ -611,7 +614,7 @@
                         <input type="tel" class="form-control" id="phone" placeholder="+7">
                         <label for="phone">🇷🇺 | +7</label>
                     </div>
-                    <button class="btn-leave-request">
+                    <button data-bs-toggle="modal" data-bs-target="#requestModal" class="btn-leave-request">
                         <span>Leave a request</span>
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M7 17L17 7" />
@@ -813,7 +816,7 @@
                             <input type="tel" class="form-control" id="phone" placeholder="+7">
                             <label for="phone">🇷🇺 | +7</label>
                         </div>
-                        <button class="btn-leave-request">
+                        <button data-bs-toggle="modal" data-bs-target="#requestModal" class="btn-leave-request">
                             <span>Leave a request</span>
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M7 17L17 7" />
@@ -870,7 +873,7 @@
             </div>
 
             <div class="col-lg-3 col-md-3 text-lg-end text-center">
-                <button type="button" class="rounded-pill me-2 mb-2 mb-lg-0 footer-btn__dark">leave a request</button>
+                <button data-bs-toggle="modal" data-bs-target="#requestModal" type="button" class="rounded-pill me-2 mb-2 mb-lg-0 footer-btn__dark">leave a request</button>
                 <button type="button" class="  rounded-pill  footer-btn__light">learn more</button>
             </div>
         </div>
@@ -903,13 +906,60 @@
     </div>
 </footer>
 
+<div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="requestModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title" id="requestModalLabel">leave a request</h2>
+            </div>
+
+            <div class="modal-body">
+                <p>leave your phone number and we will contact you</p>
+                    <div class="row">
+                        <div class="col-12 col-md-6"> <div class="phone-input-group">
+                            <img src="https://flagcdn.com/w40/ru.png" alt="RU Flag">
+                            <span>+7</span>
+                            <input type="tel" placeholder="Your phone">
+                        </div></div>
+                        <div class="col-12 col-md-6"> <button type="submit" class="w-100 leave-btn d-inline-flex align-items-center justify-content-center">
+                            Leave a request
+                            <span style="margin-left:10px;">&#8594;</span>
+                        </button></div>
 
 
+                        <!-- Кнопка отправки -->
+
+                    </div>
+                <!-- Поле телефона -->
+
+
+                <!-- Контакты -->
+                <div class="contact-buttons">
+                    <p class="mt-4 mb-2 text-start">Contact us:</p>
+                    <div class=" text-start">
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png"/>telegram</a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png"/>whatsapp</a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"/>instagram</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 <script>
+
+
+
     AOS.init();
     document.addEventListener("DOMContentLoaded", function () {
         const header = document.querySelector("header");
@@ -1103,8 +1153,6 @@
             owl3.trigger('next.owl.carousel');
         });
     });
-
-
 
 
 

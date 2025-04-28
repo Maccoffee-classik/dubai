@@ -1209,8 +1209,83 @@ body {
     color: #000; /* Цвет иконок при наведении */
 }
 
+/*MODAL*/
+.modal-content {
+    min-width: 773px;
+    background-color: black!important;
+    color: white;
+    border-radius: 30px;
+    padding: 2rem;
+    border: 2px solid white;
+}
+.modal-header, .modal-footer {
+    border: none;
+}
+.modal-title {
+    color:#fff;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+.modal-body p {
+    color: #ccc;
+    font-size: 1.25rem;
+}
+.phone-input-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+}
+.phone-input-group img {
+    width: 24px;
+    margin-right: 10px;
+}
+.phone-input-group input {
+    border: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    font-size: 1.25rem;
+}
+.phone-input-group input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.leave-btn {
+    font-family: "HelveticaNeue";
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    background-color: #fff!important;
+    color: #000!important;
 
-
+}
+.contact-buttons {
+    margin-top: 2rem;
+}
+.contact-buttons a {
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact-buttons a img {
+    width: 20px;
+}
 
 
 
@@ -1853,6 +1928,11 @@ body {
     .footer-nav .nav-link {
         font-size: 12px;
     }
+    .modal-content {
+        padding: 0rem;
+
+        min-width: 360px;
+        max-width: 36px!important;
 }
 
 .header.active .header__burger-icon path:nth-of-type(1) {
