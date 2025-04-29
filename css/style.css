@@ -1,6 +1,8 @@
 * {box-sizing: border-box}
 
-
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
 
 
 body {
@@ -825,7 +827,7 @@ body {
 }
 .faq-content-li .faq-title svg {
     background: transparent;
-    border-radius: 600px;
+
     padding: 8px;
     width: 42px;
     height: 42px;
@@ -930,13 +932,22 @@ body {
 /*owl carusel*/
 
 .owl-carousel .item {
-    height: 500px;
+
 
     border-radius: 20px;
     position: relative;
     transition: transform 0.4s ease;
 }
+.owl-carousel.carousel-one .item{
+    height: 500px;
+}
 
+.owl-carousel.carousel-two .item{
+    height: 400px;
+}
+.owl-carousel.carousel-three .item{
+    height: 600px;
+}
 
 .owl-carousel img {
     width: 100%;
@@ -950,13 +961,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    /*transition: transform 0.4s ease;*/
 
 }
 
 .owl-carousel .item:hover img {
     z-index: 10;
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
 }
 .owl-stage-outer {
     overflow: visible;
@@ -1097,7 +1108,7 @@ body {
 
 /* Эффект увеличения при наведении */
 .carousel-three .item:hover img {
-    transform: scale(1.1);
+   /* transform: scale(1.1);*/
 }
 
 /* Разрешаем выход изображения за границы при наведении */
@@ -1413,6 +1424,23 @@ body {
 
 }
 @media (max-width: 1400px) {
+    .owl-carousel .item {
+
+
+        border-radius: 20px;
+        position: relative;
+        transition: transform 0.4s ease;
+    }
+    .owl-carousel.carousel-one .item{
+        height: 400px;
+    }
+
+    .owl-carousel.carousel-two .item{
+        height: 300px;
+    }
+    .owl-carousel.carousel-three .item{
+        height: 500px;
+    }
     .footer-btn__dark {
         font-size: 12px!important;
         padding: 10px 20px !important;
@@ -1830,7 +1858,7 @@ body {
    /*BURGER*/
     .header .header__burger-icon {
 
-        z-index: 2;
+        z-index: 99;
         border: transparent;
         background: #f7f8fa;
         display: inline-block;
@@ -1951,6 +1979,23 @@ body {
         min-width: 360px;
         max-width: 36px !important;
     }
+    .logo-img {
+        width: 60px;
+        height: 60px;
+    }
+    .navbar-custom .container-fluid {
+        margin-bottom: auto;
+        padding: 0px 7px;
+    }
+    .hero-section .btn-outline-light {
+        padding: 15px 47px!important;
+
+    }
+
+    .hero-section .btn-white{
+        padding: 15px 47px!important;
+
+    }
 }
 
 .header.active .header__burger-icon path:nth-of-type(1) {
@@ -1973,4 +2018,5 @@ body {
 }
 .navbar-toggler:focus {
     text-decoration: none!important;
-    box-shadow: none!important;}
+    box-shadow: none!important;
+}
