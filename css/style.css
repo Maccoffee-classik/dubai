@@ -1427,8 +1427,113 @@ body {
     .btn-slider a {
         font-size: 14px;
     }
+    .height33 {
+        height: 33% !important;
+    }
 
 }
+@media (max-width: 1440px) {
+    .why-dubai-section__right-block-text {
+        padding: 20px 0 20px 50px;
+    }
+    .height33 {
+        height: 33% !important;
+    }
+
+    .headline {
+        padding-top: 70px;
+
+        font-size: 100px;
+
+    }
+
+    .video-preview {
+        position: absolute;
+
+        margin-top: 0;
+        margin-bottom: 0px;
+        right: 29px;
+        bottom: 40px;
+    }
+
+    .inner-circle {
+        border: none;
+    }
+
+    .play-circle {
+        width: 120px;
+        height: 120px;
+        backdrop-filter: blur(20px);
+        z-index: 3;
+
+    }
+
+    .video-box {
+        margin-top: 0;
+
+        margin-left: 10px; /* наезд на кружок */
+    }
+    .video-box img {
+
+        width: 170px;
+        border-radius: 10px;
+    }
+    .video-caption {
+        margin-left: 3px;
+        margin-top: 2px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: -0.03em;
+        color: #fff;
+    }
+    .hero-right img {
+        padding-left: 100px;
+        margin-top: -74px;
+
+        /*max-width: 908px;*/
+        width: auto;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+
+
+    .gallery-thumb {
+        right: 20px;
+        top: auto;
+        bottom: 197px;
+
+        padding: 25px 21px !important;
+
+    }
+
+
+
+
+    .gallery-stack img {
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .gallery-thumb p strong {
+        font-size: 45px;
+
+    }
+    .gallery-thumb p {
+        margin: 0;
+        font-size: 11px;
+
+    }
+
+
+
+
+
+}
+
 @media (max-width: 1400px) {
     .owl-carousel .item {
 
