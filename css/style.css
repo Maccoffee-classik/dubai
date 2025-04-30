@@ -178,7 +178,7 @@ body {
 .btn-outline-light-mob {
     display:none;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 245%;
     color: #fff;
     border: none;
@@ -652,7 +652,7 @@ body {
     color: #ccc;
 }
 .btn-leave-request {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
 
     letter-spacing: -0.03em;
@@ -670,8 +670,14 @@ body {
 }
 
 .btn-leave-request .icon {
+
     width: 24px;
     height: 24px;
+}
+ .info-box .icon svg {
+
+    width: 20px;
+    height: 20px;
 }
 
 .btn-leave-request:hover {
@@ -1823,7 +1829,7 @@ body {
         margin-bottom: 31px;
     }
     .w-220 {
-        width: 220px;
+        width: 200px;
     }
 
     /*моб меню*/
@@ -1895,6 +1901,11 @@ body {
         display: block;
         width: 100%;
         margin-bottom: 200px;
+    }
+    .info-box .icon svg {
+
+        width: 26px;
+        height: 26px;
     }
 }
 
@@ -1996,6 +2007,13 @@ body {
         padding: 15px 47px!important;
 
     }
+
+   .why-dubai-section h4 {
+        margin-right: 20px;
+    }
+
+
+
 }
 
 .header.active .header__burger-icon path:nth-of-type(1) {
